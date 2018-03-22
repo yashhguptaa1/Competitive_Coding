@@ -26,14 +26,14 @@ class GFG {
             System.out.println(s.substring(1));
             System.out.println(s.substring(0));
             return stringLength(s.substring(1)) + 1;
-            
+
         }
-        
+
     /*
                 return stringLength(s.substring(0)) + 1;
         This results in infinite recursion because you're passing the same string
         Because
-        
+
         public String substring(int beginIndex, int endIndex) {
     if (beginIndex < 0) {
         throw new StringIndexOutOfBoundsException(beginIndex);
@@ -50,15 +50,15 @@ class GFG {
 }
         As can be seen on passing beginIndex as 0 this is returned means same string is returned
         As can be seen on passing beginIndex as any number greater than 0 new string is created and returned
-        
+
 
     */
-        
+
 }
 }
 /*
 OUTPUT
-Enter a String: 
+Enter a String:
 ash gupta
 yash gupta
 sh gupta
