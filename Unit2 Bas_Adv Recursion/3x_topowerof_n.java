@@ -17,10 +17,12 @@ public static int power(int x, int y)
 	    temp = power(x, y/2);//Recursive call + storing last updated value
 
 		// if even power
+		///consider like finding square
 	   if (y%2 == 0)
 		return temp*temp;
 
        else//if(y%2==1)
+        ///consider like finding cube
          return x*temp*temp;
 
     }

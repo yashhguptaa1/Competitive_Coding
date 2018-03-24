@@ -1,6 +1,5 @@
 /*Print the fibonacci series till the given Number */
 
-import java.io.*;
 import java.util.*;
 
 class GFG {
@@ -24,7 +23,7 @@ class GFG {
             return fib(x-1)+fib(x-2);//RECURSIVE CALL
         }
     }//Time Complexity: T(n) = T(n-1) + T(n-2)+O(n) which is exponential.
-    
+
     //Using Dynamic Programming
     public static int[] fib(int x,int op[])
     {
@@ -36,7 +35,7 @@ class GFG {
          and store it */
         op[i] = op[i-1] + op[i-2];
     }
-    
+
     return op;
     }//Time Complexity: O(n)
 
@@ -44,18 +43,18 @@ class GFG {
 
 	    int num = new Scanner(System.in).nextInt();
 	    int[] arr=new int[num];
-	    
+
 	    for(int i=1;i<num+1;i++)
 	    {
 	        System.out.print(" "+fib(i)+" ");
 	    }
-        
+
             System.out.println(" ");
             int fin[]=fib(num,arr);
-	    
+
 	    for(int y:fin)
             System.out.println(y);
-	    
+
 
 	}
 }

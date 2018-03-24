@@ -8,28 +8,29 @@ import java.io.*;
 class GFG {
      static int ind=0;
 	public static int lastIndex(int input[], int x) {
-		
+
       int l=0;
       int r=input.length;
-      
+
       return lastIndex(input,l,r,x);
       }
   	public static int lastIndex(int input[], int l,int r,int x) {
-      
+      //BASE CASE
       if(r>l)
       {
         if(x==input[l])
            ind=l;
-        
+
+        //RECURSIVE CALL
         return lastIndex(input,l+1,r,x);
-        
-        
-        
+
+
+
       }
-      
+      // return the last index
       if (l==r&&ind!=0)
         return ind;
-      
+
       else
         return -1;
 	public static void main (String[] args) {

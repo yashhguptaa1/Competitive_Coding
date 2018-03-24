@@ -17,7 +17,7 @@ class GFG {
 
         else
         {
-            //it contains smaller sub probs like below
+
             ///5!=5 X 4!
             return x*factorial(x-1);//RECURSIVE CALL
         }
