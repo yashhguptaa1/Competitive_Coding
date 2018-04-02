@@ -1,7 +1,8 @@
 /*Question
 Given an integer array A which contains duplicates.
 Remove duplicates from the array and return a new
-array without any duplicates*/
+array without any duplicates
+*/
 
 
 import java.io.*;
