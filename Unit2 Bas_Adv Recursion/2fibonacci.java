@@ -23,6 +23,7 @@ class GFG {
             ///      =       2
             return fib(x-1)+fib(x-2);//RECURSIVE CALL
 	// this denotes the fact that next fibonacci numkber is sum of its previous two nos 
+	//that is the number at 3rd pos is sum of nos at 1st and 2nd pos
         }
     }//Time Complexity: T(n) = T(n-1) + T(n-2)+O(n) which is exponential.
 
@@ -56,7 +57,8 @@ class GFG {
 	    }
     for(int i=1;i<num+1;i++)
 	    {
-	        System.out.print(" "+fib2(i,arr)+" ");
+	        System.out.print(" "+fib2(i,arr)+" ");//print fibonacci number at every position
+	    						//resulting in fibonacci series
 	    }
 
 
