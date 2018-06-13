@@ -4,7 +4,8 @@ import java.util.*;
 
 class GFG {
     //Using Recursion
-    //Bottom up approach
+    
+  //this function is used to find the value of number at xth pos
     public static int fib(int x)
     {
 
@@ -21,6 +22,7 @@ class GFG {
             ///      =   1   +   1
             ///      =       2
             return fib(x-1)+fib(x-2);//RECURSIVE CALL
+	// this denotes the fact that next fibonacci numkber is sum of its previous two nos 
         }
     }//Time Complexity: T(n) = T(n-1) + T(n-2)+O(n) which is exponential.
 
