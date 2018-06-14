@@ -2,8 +2,34 @@
 import java.io.*;
 import java.util.*;
 
-class GFG {
-    //bottom up approach
+class Power {
+      /* Function to calculate x raised to the power y */
+     //in this case we have to calculate same power again and again
+    static int power(int x, int y)
+    {
+	//BASE CASE
+        if (y == 0)
+            return 1;
+	 //If power is even i.e. square,quad
+        else if (y % 2 == 0)
+            return power(x, y / 2) * power(x, y / 2);
+	    
+	  //if power is odd we have to multiply once more the number than even power case
+        else
+            return x * power(x, y / 2) * power(x, y / 2);
+    }
+//TC=O(n)
+	
+	//Above function can be optimized to O(logn) by calculating power(x, y/2) only once and storing it. 
+
+	/* Program to test function power */
+    public static void main(String[] args)
+    {
+        int x = 2;
+        int y = 3;
+ 
+        System.out.printf("%d", power(x, y));
+    }
 
 public static int power(int x, int y)
     {
