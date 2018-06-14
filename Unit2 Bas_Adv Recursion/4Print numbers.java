@@ -9,7 +9,8 @@ class GFG {
 			System.out.print(1 + " ");
           return;
 		}
-		print(n - 1);
+		print(n - 1);//PUSH(es) all the recursive calls in stack and till n becomes 1
+	                     //and then POP(s) each function call after executing it
       System.out.print(n+" ");
     }
 	public static void main (String[] args) {
