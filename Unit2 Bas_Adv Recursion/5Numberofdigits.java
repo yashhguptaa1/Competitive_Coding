@@ -11,8 +11,8 @@ class GFG {
 		}
 		//RECURSIVE CALL
 	        //lastcount saves the count of digits till at any moment
-	    	int enddigit=n/10;
-		int lastcount = count(enddigit);
+	    	int remdigits=n/10;
+		int lastcount = count(remdigits);
 		return lastcount+1;//on not using +1, lastcount would not increment and lastcount
                             //as from base case would return
     }
